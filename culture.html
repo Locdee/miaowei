@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0045)http://www.shuangyu.com.cn/culture/corner.jsp -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>妙味食品官方网站</title>
+
+<link rel="stylesheet" type="text/css" href="./snacks_files/main.css">
+<link rel="stylesheet" type="text/css" href="./snacks_files/page.css">
+<script type="text/javascript" src="./snacks_files/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="./snacks_files/jquery.SuperSlide.js"></script>
+<script type="text/javascript" src="./snacks_files/main.js"></script>
+<script type="text/javascript" src="./snacks_files/page.js"></script>
+<link rel="shortcut icon" href="./snacks_files/favicon.jpg">
+</head>
+<body>
+<script type="text/javascript" src="./snacks_files/login.js"></script>
+<div class="header">
+	<div class="container-wrap">
+		<div class="left logo"><a href="index.html" title="首页"><img src="./snacks_files/index_logo.png" alt="首页"></a></div>
+		<div class="right">
+			<ul class="header-nav">
+				<li class=""><a href="./index.html">首页</a></li>
+				<li><a href="about_miaowei.html">了解妙味</a>
+					
+				</li>
+				<li class=""><a href="news.html">新闻中心</a>
+					
+				</li>
+				<li class=""><a href="products.html">产品展示</a>
+					
+				</li>
+				
+				<li class="active"><a href="culture.html">企业文化</a>
+					
+				</li>
+				<li class=""><a href="find_us.html">联系我们</a>
+					
+				</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<script type="text/javascript">
+$("#registerDom").ownDialog({
+	triggerDom:"#login",
+	triggerAction:"click",
+	target:"#register_dialog",
+	overLay:"#overlay",
+	width:425,
+	height:350
+});
+
+var hover_id=null,liveitem="";
+
+liveitem=$(".header-nav li.active .sub-menu").html();
+
+$(document).ready(function(){
+	if(liveitem){
+		$(".sub-menu-wrap .sub-menu").html(liveitem);
+	}
+	
+	$(".header-nav li").hover(function(){
+		clearTimeout(hover_id);
+		$(".sub-menu-wrap .sub-menu").html("");
+		if($(this).find(".sub-menu").html()){
+			$(".sub-menu-wrap .sub-menu").append($(this).find(".sub-menu").html());
+			$(".sub-menu-wrap").slideDown();
+		}
+	},function(){
+		hover_id=setTimeout(function(){
+			
+				$(".sub-menu-wrap .sub-menu").html(liveitem);
+			
+		},800);
+	});
+	
+	$(".sub-menu-wrap").hover(function(){
+		clearTimeout(hover_id);
+	},function(){
+		
+			$(".sub-menu-wrap .sub-menu").html(liveitem);
+		
+	});
+	
+	//登陆校验
+	
+});
+
+
+</script><div class="container-wrap">
+	<div class="page-wrap">
+		<div class="bread-crumbs item-box"><a href="index.html">首页</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="./culture.html">企业文化</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;
+		</div>
+		
+		<div class="item-sep"></div>
+		<div id="contentList">
+			<div class="item-box">
+			<h3>公司理念</h3></br>
+			让更多的消费者享受妙味""公司的优质产品，树休闲食品同行业服务之典范！<br></br>
+			<h3>服务理念</h3></br>
+			为消费者提供卓越的价值，使消费者在美味中享受幸福和快乐。为了满足消费者的需求我们将不断开发卓越的 产品！<br></br>
+			<h3>质量方针</h3></br>
+			"妙味"承诺保证卓越的产品质量，给消费者提供安全、卫生和口味俱佳的产品！<br></br>
+			<h3>发展目标</h3></br>
+			引导休闲食品的精致化、生活化，建立一个全国性的休闲食品连锁销售服务机构，
+			成为消费者心中首选休闲食品著名品牌之一。逐步提高妙味产品<br><br/>的市场占有率，
+			实施妙味公司的战略工程，树立休闲食品连锁行业新的旗帜！
+			</div>
+		</div>
+		<div id="pager_container" class="pager_container"></div>
+	</div>
+</div>
+<div class="container-wrap">
+	<div class="container-wrap" id="footer" style="padding-top: 79px;">
+	<div class="footer" style="border: 0px solid red;margin-top: -0px;">
+
+		<div class="footer-wrap">
+			<center>
+			<img src="./snacks_files/item_line.jpg"><br><br>
+			<ul>
+				<li class="f2"><a href="http://weibo.com/u/5406959768" target="_blank"><span></span>妙味食品官方微博</a></li>
+				<li class="f3"><a href="javascript:void(0)"><span></span>客服:400-023-3353</a></li>
+				<li class="f3"><a href="javascript:void(0)"><span></span>热线:023-67086928</a></li>
+				<li class="f4"><a href="javascript:void(0)"><span></span>邮箱：cqymw023@sina.cn</a></li>
+			</ul>
+			</center>
+			<br>
+			<p>公司地址：重庆市垫江县新民镇粮站（渝巫路38号）&nbsp;&nbsp;&nbsp;&nbsp;传真：67086928 &nbsp;&nbsp;&nbsp;&nbsp;邮政编码：400000</p>
+			<p>重庆妙味食品有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;渝ICP备14010616号</p>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+
+function positionFooter() {
+    /* var footerHeight = 0;
+    var footerTop = 0;
+    footerHeight = $("#footer").height();
+    footerTop = (document.body.scrollHeight-footerHeight)+"px"; */
+    $("#footer").css({"padding-top":"0px"});
+    //如果页面内容高度小于屏幕高度，div#footer将绝对定位到屏幕底部，否则div#footer保留它的正常静态定位
+    if($(document.body).height() < $(window).height()) {
+        $("#footer").css({"padding-top":$(window).height()-$(document.body).height()+"px"});
+    }
+    else{
+//    	$("#footer").css({"padding-top":"0px"});
+    }
+}
+$(window).bind("load", function() {
+//	positionFooter();
+	var dynamic = "1";
+    if(dynamic == "0"){
+    	positionFooter();
+    }
+    //$(window).scroll(positionFooter).resize(positionFooter);
+    //$("body").resize(positionFooter);
+});
+</script>
+</div>
+
+<script type="text/javascript">
+//获取分页参数（rows，page等）
+var con=getPageSettings();
+var state = {
+	    title: document.title,
+	    url: document.location.href,
+	    page: con["page"]
+	};
+$(function(){
+	//第一次进来,记录历史记录,此时为第一页
+	window.history.pushState(state, document.title, document.location.href);
+	
+	//监听浏览器的后退实践
+	window.addEventListener('popstate', function(e){
+		if (history.state){
+		    var state = e.state;
+		    if(state){
+		    	con["page"] = state.page;
+		    	getData(con);
+		    }
+	    	
+		 }else{
+			 history.back();
+		 }
+		}, false);
+	con["contentCategoryId"] = "5";
+	getData(con);
+});
+
+function getData(condition){
+	$.ajax({
+		url:'/content/list.action',
+		data:condition,
+		success:function(data){
+			var arr = data.rows;
+			$("#contentList").html("");
+			if(arr.length > 0){
+				for(var i=0;i<arr.length;i++){
+					var obj = arr[i];
+					var html = "<div class=\"item-box\">" +
+							   "	<strong>"+obj.title+"</strong>" +
+							   "	<p class=\"black\">"+(obj.summary ? obj.summary : '')+"</p>" +
+							   "	<p style=\"text-align:right;\"><a href=\"http://www.shuangyu.com.cn:80/culture/cornerDetail.jsp?articleId="+obj.entityId+"\">更多></a></p>" +
+							   "</div>" +
+							   "<div class=\"item-sep item-sep-light\"></div>";
+					$("#contentList").append(html);
+				}
+				
+				//当页面记录条数超过5条时才显示分页
+				if(data.total > 5){
+					
+					//求总页数
+					var total=Math.ceil(data.total/con.rows);
+					if(!total){
+						total=1;
+					}
+					
+					//生成分页导航条
+					//pager_container表示页面中要显示分页的地方，con.page表示要跳转到的页面，total表示总页数
+					PPage("pager_container",con.page,total,"pager.go",true);
+				}
+				else{
+					$("#pager_container").html("");
+				}
+			}else{
+				$("#contentList").html("<div class=\"item-box\">抱歉,暂时没有你想要的数据.</div>");
+				$("#pager_container").html("");
+			}
+			//定位页尾
+			positionFooter();
+		},
+		error:function(){
+//			alert('查询出错!');
+		}
+	});
+}
+
+//跳转到指定页
+function pager(){};
+
+pager.go=function(pageNum){
+	//每次翻页要记录下历史记录
+	state = {
+		    title: document.title,
+		    url: document.location.href,
+		    page: pageNum
+	};
+	window.history.pushState(state, document.title, document.location.href);
+	con.page=pageNum;
+	getData(con);
+};
+</script>
+
+
+</body></html>

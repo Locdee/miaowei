@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0045)http://www.dali-group.com/industry.asp?Page=2 -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" href="./snacks_files/favicon.jpg">
+
+<link href="./dali_files/layout.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./dali_files/jquery.js"></script>
+<title>行业新闻</title>
+<script type="text/javascript">
+$(function(){
+$(".menu a").hover(function(){
+$index=$(".menu a").index(this)+1;
+if($(".nav_"+$index).length==1){
+$(".nav_next").css("display","block");
+$(".nav_"+$index).css("display","block").siblings().css("display","none");
+$(this).addClass("hover");
+}
+else{
+$(".nav_next ul").css("display","none");
+$(".nav_next").css("display","none");
+}
+},
+function(){
+$index=$(".menu a").index(this)+1;
+$(this).removeClass("hover");
+$(".nav_next").css("display","none");
+if($(".nav_"+$index).length==1){
+$(".nav_"+$index).css("display","none");
+$(".nav_"+$index).hover(function(){
+$(".nav_next").css("display","block");
+$(this).css("display","block");
+$(".menu a").eq($index-1).addClass("hover");
+},
+function(){
+$(this).css("display","none");
+$(".nav_next").css("display","none");
+$(".menu a").eq($index-1).removeClass("hover");
+})
+}
+})
+$(".more_web a").hover(function(){
+$(".web_list").slideDown("slow");
+},
+function(){
+$(".web_list").hover(function(){
+$(this).slideDown(500);
+},function(){
+$(this).slideUp(500);
+});
+})
+})
+</script>
+</head>
+
+<body>
+
+
+<div id="wrap">
+
+<div id="sidebar">
+<ul id="menu">
+
+
+
+</ul>
+</div>
+<div id="main">
+<div class="news" style="width: 1200px;">
+
+<p><span>2011-7-5</span><a href="news1.html" target="_blank">全国食品安全宣传周启动仪式暨第三届中国食品安全论坛在京举办</a></p>
+<p><span>2011-7-5</span><a href="news2.html" target="_blank">我国现代计量基准研究取得新突破</a></p>
+<p><span>2011-5-22</span><a href="news3.html" target="_blank">有机食品、绿色食品、无公害食品区别浅析</a></p>
+<p><span>2011-5-22</span><a href="news4.html" target="_blank">食品企业诚信体系建设——饮料企业实施指南</a></p>
+<p><span>2011-5-22</span><a href="news5.html" target="_blank">国务院确定今年食品安全监管八重点</a></p>
+
+
+</div>
+</div>
+<div class="clear">
+</div>
+
+</div>
+
+
+</body></html>

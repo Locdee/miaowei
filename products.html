@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>妙味食品官方网站</title>
+	<link rel="stylesheet" type="text/css" href="./snacks_files/main.css" />
+	<script type="text/javascript" src="./snacks_files/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="./snacks_files/jquery.SuperSlide.js"></script>
+	<script type="text/javascript" src="./snacks_files/main.js"></script>
+	<link rel="shortcut icon" href="./snacks_files/favicon.jpg">
+	
+</head>
+<body>
+	<script type="text/javascript" src="./snacks_files/login.js"></script>
+	<div class="header">
+	<div class="container-wrap">
+		<div class="left logo"><a href="index.html" title="首页"><img src="./snacks_files/index_logo.png" alt="首页"></a></div>
+		<div class="right">
+			<ul class="header-nav">
+				<li class=""><a href="./index.html">首页</a></li>
+				<li><a href="about_miaowei.html">了解妙味</a>
+					
+				</li>
+				<li class=""><a href="news.html">新闻中心</a>
+					
+				</li>
+				<li class="active"><a href="products.html">产品展示</a>
+					
+				</li>
+				
+				<li class=""><a href="culture.html">企业文化</a>
+					
+				</li>
+				<li class=""><a href="find_us.html">联系我们</a>
+					
+				</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<script type="text/javascript">
+//首页导航栏的具体栏目，提示信息
+$("#registerDom").ownDialog({
+	triggerDom:"#login",
+	triggerAction:"click",
+	target:"#register_dialog",
+	overLay:"#overlay",
+	width:425,
+	height:350
+});
+
+var hover_id=null,liveitem="";
+
+liveitem=$(".header-nav li.active .sub-menu").html();
+
+$(document).ready(function(){
+	if(liveitem){
+		$(".sub-menu-wrap .sub-menu").html(liveitem);
+	}
+	
+	$(".header-nav li").hover(function(){
+		clearTimeout(hover_id);
+		$(".sub-menu-wrap .sub-menu").html("");
+		if($(this).find(".sub-menu").html()){
+			$(".sub-menu-wrap .sub-menu").append($(this).find(".sub-menu").html());
+			$(".sub-menu-wrap").slideDown();
+		}
+	},function(){
+		hover_id=setTimeout(function(){
+			
+				$(".sub-menu-wrap .sub-menu").html(liveitem);
+			
+		},800);
+	});
+	
+	$(".sub-menu-wrap").hover(function(){
+		clearTimeout(hover_id);
+	},function(){
+		
+			$(".sub-menu-wrap .sub-menu").html(liveitem);
+		
+	});
+});
+</script>
+	<div class="container-wrap">
+		<div class="page-wrap">
+			<div class="bread-crumbs item-box">
+				<a href="index.html">首页</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a
+					href="#">产品展示</a>
+			</div>
+			<div class="item-box">
+				<h3>产品展示</h3>
+			</div>
+			<div class="item-sep"></div>
+			<div
+				style="margin: 0 auto; width: 910px; height: 300px; padding: 11px;">
+				<img src="./snacks_files/product_show_top.jpg" alt="">
+			</div>
+			<div class="item-sep"></div>
+			<div class="item-box">
+				<dl>
+					<dt>
+						<a href="./detail_nbj.html"><img src="./snacks_files/paojiaoniubanjin.jpg"></a>
+					</dt>
+					<dd>
+						<p class="title">泡椒牛板筋系列</p>
+						<p>方便食品|素食</p>
+						<p>配料：面粉，水，植物油，食用盐，花椒，辣椒，食用香料<br>
+						重庆风味，麻辣鲜香，欢乐分享，味觉上的刺激享受，还是熟悉的味道。</p>
+						<a class="product-detail" href="./detail_nbj.html">
+							<img src="./snacks_files/product_detail.png" alt="">
+						</a>
+					</dd>
+				</dl>
+			</div>
+			<div class="item-sep"></div>
+			<div class="item-box">
+				<dl>
+					<dt>
+						<a href="detail_cgz.html"><img src="./snacks_files/pjcgz.jpg"></a>
+					</dt>
+					<dd>
+						<p class="title">臭干子系列</p>
+						<p>方便食品|素食</p>
+						<p>配料：面粉，水，植物油，食用盐，花椒，辣椒，食用香料<br>
+						重庆风味，麻辣鲜香，欢乐分享，味觉上的刺激享受，还是熟悉的味道。</p>
+						<a class="product-detail" href="./detail_cgz.html">
+							<img src="./snacks_files/product_detail.png" alt="">
+						</a>
+					</dd>
+				</dl>
+			</div>
+			<div class="item-sep"></div>
+			<div class="item-box">
+				<dl>
+					<dt>
+						<a href="./detail_dg.html"><img src="./snacks_files/xjdgpj.jpg"></a>
+					</dt>
+					<dd>
+						<p class="title">豆干系列</p>
+						<p>方便食品|素食</p>
+						<p>配料：大豆，水，植物油，食用盐，辣椒，花椒，白砂糖，食用香精香料，香辛料<br>
+						重庆风味，休闲食品。</p>
+						<a class="product-detail" href="./detail_dg.html">
+							<img src="./snacks_files/product_detail.png" alt="">
+						</a>
+					</dd>
+				</dl>
+			</div>
+			<div class="item-sep"></div>
+			<div class="item-box">
+				<dl>
+					<dt>
+						<a href="./detail_sc.html"><img src="./snacks_files/sj100g.jpg"></a>
+					</dt>
+					<dd>
+						<p class="title">泡椒蔬菜系列</p>
+						<p>方便食品|素食</p>
+						<p>配料：竹笋，水，野山椒，食用植物油，食用盐，白砂糖，酵母提取物，香辛料<br>
+						重庆风味，休闲食品。</p>
+						<a class="product-detail" href="./detail_sc.html">
+							<img src="./snacks_files/product_detail.png" alt="">
+						</a>
+					</dd>
+				</dl>
+			</div>
+			<div class="item-sep"></div>
+			<div class="page">
+				<dl>
+					<dd>
+						<a class="product-detail" href="./products1.html">
+							<img src="./snacks_files/next_page.png" alt="">
+						</a>
+					</dd>
+				</dl>
+			
+			</div>
+		</div>
+	</div>
+	
+	<div class="container-wrap" id="footer" style="padding-top: 0px;">
+		<div class="footer" style="border: 0px solid red;margin-top: -0px;">
+
+		<div class="footer-wrap">
+			<center>
+			<img src="./snacks_files/item_line.jpg"><br><br>
+			<ul>
+				<li class="f2"><a href="http://weibo.com/u/5406959768" target="_blank"><span></span>妙味食品官方微博</a></li>
+				<li class="f3"><a href="javascript:void(0)"><span></span>客服:400-023-3353</a></li>
+				<li class="f3"><a href="javascript:void(0)"><span></span>热线:023-67086928</a></li>
+				<li class="f4"><a href="javascript:void(0)"><span></span>邮箱：cqymw023@sina.cn</a></li>
+			</ul>
+			</center>
+			<br>
+			<p>公司地址：重庆市垫江县新民镇粮站（渝巫路38号）&nbsp;&nbsp;&nbsp;&nbsp;传真：67086928 &nbsp;&nbsp;&nbsp;&nbsp;邮政编码：400000</p>
+			<p>重庆妙味食品有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;渝ICP备14010616号</p>
+		</div>
+	</div>
+	</div>
+<script type="text/javascript">
+function positionFooter() {
+    $("#footer").css({"padding-top":"0px"});
+    //如果页面内容高度小于屏幕高度，div#footer将绝对定位到屏幕底部，否则div#footer保留它的正常静态定位
+    if($(document.body).height() < $(window).height()) {
+        $("#footer").css({"padding-top":$(window).height()-$(document.body).height()+"px"});
+    }
+}
+$(window).bind("load", function() {
+	var dynamic = "0";
+    if(dynamic == "0"){
+    	positionFooter();
+    }
+});
+</script>
+</body>
+</html>

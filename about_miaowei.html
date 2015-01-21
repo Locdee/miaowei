@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>妙味食品官方网站</title>
+<link rel="stylesheet" type="text/css" href="./snacks_files/main.css">
+<script type="text/javascript" src="./snacks_files/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="./snacks_files/jquery.SuperSlide.js"></script>
+<script type="text/javascript" src="./snacks_files/main.js"></script>
+<link rel="shortcut icon" href="./snacks_files/favicon.jpg">
+</head>
+<body>
+<script type="text/javascript" src="./snacks_files/login.js"></script>
+<div class="header">
+	<div class="container-wrap">
+		<div class="left logo"><a href="index.html" title="首页"><img src="./snacks_files/index_logo.png" alt="首页"></a></div>
+		<div class="right">
+			<ul class="header-nav">
+				<li class=""><a href="./index.html">首页</a></li>
+				<li class="active"><a href="about_miaowei.html">了解妙味</a>
+					
+				</li>
+				<li class=""><a href="news.html">新闻中心</a>
+					
+				</li>
+				<li class=""><a href="products.html">产品展示</a>
+					
+				</li>
+				
+				<li class=""><a href="culture.html">企业文化</a>
+					
+				</li>
+				<li class=""><a href="find_us.html">联系我们</a>
+					
+				</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+
+<div id="registerDom">
+	<div id="overlay" style="display:none;position:absolute;top:0;left:0;width:100%;height:100%;z-index:10000;background-color:black;filter: alpha(opacity=50);opacity: 0.5;"></div>
+	
+<script type="text/javascript">
+$("#registerDom").ownDialog({
+	triggerDom:"#login",
+	triggerAction:"click",
+	target:"#register_dialog",
+	overLay:"#overlay",
+	width:425,
+	height:350
+});
+
+var hover_id=null,liveitem="";
+
+liveitem=$(".header-nav li.active .sub-menu").html();
+
+$(document).ready(function(){
+	if(liveitem){
+		$(".sub-menu-wrap .sub-menu").html(liveitem);
+	}
+	
+	$(".header-nav li").hover(function(){
+		clearTimeout(hover_id);
+		$(".sub-menu-wrap .sub-menu").html("");
+		if($(this).find(".sub-menu").html()){
+			$(".sub-menu-wrap .sub-menu").append($(this).find(".sub-menu").html());
+			$(".sub-menu-wrap").slideDown();
+		}
+	},function(){
+		hover_id=setTimeout(function(){
+			
+				$(".sub-menu-wrap .sub-menu").html(liveitem);
+			
+		},800);
+	});
+	
+	$(".sub-menu-wrap").hover(function(){
+		clearTimeout(hover_id);
+	},function(){
+		
+			$(".sub-menu-wrap .sub-menu").html(liveitem);
+		
+	});
+	
+	//登陆校验
+	
+});
+
+
+</script><div class="container-wrap">
+	<div class="page-wrap">
+		<div class="bread-crumbs item-box"><a href="index.html">首页</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="./about_miaowei.html">了解妙味</a>&nbsp;&nbsp;&gt;&nbsp;&nbsp;<a href="">企业简介</a></div>
+		<div class="item-box"><img src="./snacks_files/banner_top.jpg" alt=""></div><br>
+		<div class="item-box"><h3>企业简介</h3></div>
+		<div class="item-sep"></div>
+		<div class="item-box">
+			<p class="black">
+			重庆渝妙味食品有限公司是一家集研发、生产与销售于一体的大型民营食品生产企业，生产线引进先进的自动化生产，自动化包装，自动灭菌装置，紧跟时代的潮流，做放心企业，放心食品。
+			公司旗下有“将味比味”、“渝秀丽”等多个畅销品牌。公司主要生产豆制品，肉制品，无公害蔬菜制品等几十种类的食品，在重庆小副食品市场中占有绝对的地位。</br>
+			&nbsp;&nbsp;&nbsp;&nbsp;质量是企业的生命，只有确保商品的质量才能取信于消费者；诚信是经商的根本，只有百分百的诚信才能取信于消费者。在此我们保证决不销售假冒伪劣、过期产品，做到以消费者为中心，在价格、质量、服务上锲而不舍的追求“没有最好，只有更好”的信念，企业才能得到长足发展。		
+			</p>
+		</div>
+	</div>
+</div>
+<div class="container-wrap">
+	<div class="container-wrap" id="footer" style="padding-top: 0px;">
+	<div class="footer" style="border: 0px solid red;margin-top: -0px;">
+
+		<div class="footer-wrap">
+			<center>
+			<img src="./snacks_files/item_line.jpg"><br><br>
+			<ul>
+				<li class="f2"><a href="http://weibo.com/u/5406959768" target="_blank"><span></span>妙味食品官方微博</a></li>
+				<li class="f3"><a href="javascript:void(0)"><span></span>客服:400-023-3353</a></li>
+				<li class="f3"><a href="javascript:void(0)"><span></span>热线:023-67086928</a></li>
+				<li class="f4"><a href="javascript:void(0)"><span></span>邮箱：cqymw023@sina.cn</a></li>
+			</ul>
+			</center>
+			<br>
+			<p>公司地址：重庆市垫江县新民镇粮站（渝巫路38号）&nbsp;&nbsp;&nbsp;&nbsp;传真：67086928 &nbsp;&nbsp;&nbsp;&nbsp;邮政编码：400000</p>
+			<p>重庆妙味食品有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;渝ICP备14010616号</p>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+
+function positionFooter() {
+    /* var footerHeight = 0;
+    var footerTop = 0;
+    footerHeight = $("#footer").height();
+    footerTop = (document.body.scrollHeight-footerHeight)+"px"; */
+    $("#footer").css({"padding-top":"0px"});
+    //如果页面内容高度小于屏幕高度，div#footer将绝对定位到屏幕底部，否则div#footer保留它的正常静态定位
+    if($(document.body).height() < $(window).height()) {
+        $("#footer").css({"padding-top":$(window).height()-$(document.body).height()+"px"});
+    }
+    else{
+//    	$("#footer").css({"padding-top":"0px"});
+    }
+}
+$(window).bind("load", function() {
+//	positionFooter();
+	var dynamic = "0";
+    if(dynamic == "0"){
+    	positionFooter();
+    }
+    //$(window).scroll(positionFooter).resize(positionFooter);
+    //$("body").resize(positionFooter);
+});
+</script>
+</div>
+
+
+</body></html>

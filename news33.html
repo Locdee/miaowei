@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0062)http://www.dali-group.com/industry_detail.asp?id=399&SortID=25 -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<link href="./dali_files/layout.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="./dali_files/jquery.js"></script>
+<title>达利集团-新闻互动-有机食品、绿色食品、无公害食品区别浅析</title>
+<script type="text/javascript">
+$(function(){
+$(".menu a").hover(function(){
+$index=$(".menu a").index(this)+1;
+if($(".nav_"+$index).length==1){
+$(".nav_next").css("display","block");
+$(".nav_"+$index).css("display","block").siblings().css("display","none");
+$(this).addClass("hover");
+}
+else{
+$(".nav_next ul").css("display","none");
+$(".nav_next").css("display","none");
+}
+},
+function(){
+$index=$(".menu a").index(this)+1;
+$(this).removeClass("hover");
+$(".nav_next").css("display","none");
+if($(".nav_"+$index).length==1){
+$(".nav_"+$index).css("display","none");
+$(".nav_"+$index).hover(function(){
+$(".nav_next").css("display","block");
+$(this).css("display","block");
+$(".menu a").eq($index-1).addClass("hover");
+},
+function(){
+$(this).css("display","none");
+$(".nav_next").css("display","none");
+$(".menu a").eq($index-1).removeClass("hover");
+})
+}
+})
+$(".more_web a").hover(function(){
+$(".web_list").slideDown("slow");
+},
+function(){
+$(".web_list").hover(function(){
+$(this).slideDown(500);
+},function(){
+$(this).slideUp(500);
+});
+})
+})
+</script></head>
+
+<body>
+
+<div id="wrap" style="height: 300px;">
+
+<div id="main">
+
+<div class="news_detail">
+<h1 class="blue">有机食品、绿色食品、无公害食品区别浅析</h1><div class="date">2011-05-22</div><p style="LINE-HEIGHT: 1.5"><font style="FONT-FAMILY: 宋体">主要区别在于认证依据的标准不同。<br style="FONT-FAMILY: ">&nbsp;&nbsp;&nbsp; 1、这些标准的主要区别在农药化肥使用量不同，简单说就是有机产品中禁止使用人工合成的化肥、激素和农药，绿色食品要减少使用农药和化肥，获得无公害认证的产品不使用国家禁止使用的农药和化肥。<br style="FONT-FAMILY: ">&nbsp;&nbsp;&nbsp; 2、对基因工程和辐射技术的要求：有机食品不允许使用基因工程技术和辐射技术；其它食品则允许有限使用这些物质，并且不禁止使用基因工程技术。如绿色食品对基因工程技术和辐射技术的使用就未作规定。<br style="FONT-FAMILY: ">&nbsp;&nbsp;&nbsp; 3、认证标志不一样：有机食品分为：有机食品和有机转换食品。绿色食品分为：a级、aa级。而无公害食品不分类。<br style="FONT-FAMILY: ">&nbsp;&nbsp;&nbsp; 4、无公害产品主要以初级产品为主，如猪肉、鸡蛋、大米、蔬菜、水果、鱼类产品等未经加工产品；绿色食品中加工产品较多，如牛奶及奶制品、葡萄酒、饮料、蔬菜、水果及初加工品、肉制品；有机食品则以蔬菜、水果、茶叶、蜂蜜为主。<br style="FONT-FAMILY: ">&nbsp;&nbsp;&nbsp; 总体而言：纯天然的程度和质量等级：有机食品最好，其次是绿色食品。　　</font></p><p>&nbsp;</p>
+<p>上一篇：<a href="news2.html" target="_blank"><span class="blue">我国现代计量基准研究取得新突破</span></a>&nbsp;&nbsp;&nbsp;</p>
+下一篇：<a href="news4.html" target="_blank"><span class="blue">食品企业诚信体系建设——饮料企业实施指南</span></a>
+</div>
+</div>
+<div class="clear"></div>
+
+</div>
+</div>
+
+
+</body></html>

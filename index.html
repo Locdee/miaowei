@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0036)http://www.shuangyu.com.cn/index.jsp -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="renderer" content="webkit|ie-stand">
+<title>妙味食品官方网站</title>
+<link rel="stylesheet" type="text/css" href="./snacks_files/main.css">
+<script type="text/javascript" src="./snacks_files/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="./snacks_files/jquery.SuperSlide.js"></script>
+<script type="text/javascript" src="./snacks_files/main.js"></script>
+<link rel="shortcut icon" href="./snacks_files/favicon.jpg">
+<script src="./snacks_files/amazingslider.js"></script>
+<script src="./snacks_files/initslider-1.js"></script>
+<style>
+.show_swf{position:fixed;top:0;left:0;width:100%;height:100%;z-index:999;background-color:#EBE4D5;opacity: 1;filter:alpha(opacity=100);}
+.swf_wrap{width:960px;height:650px;margin-top:50px;margin-left:auto;margin-right:auto;position:relative;}
+.item_swf{width:893px;height:650px;margin-left:67px;}
+.swf_close{display:block;width:61px;height:58px;position:absolute;bottom:48px;left:0;}
+.swf_close{background:url(images/swf_close.png) no-repeat !important;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/swf_close.png');
+_ background-image: none;}
+body{background:transparent url(images/twill.jpg) repeat;}
+</style>
+
+<script type="text/javascript">
+var con=getPageSettings();
+
+$(function(){
+	con["contentCategoryId"] = "1";
+	con["rows"] = 4;
+	getData(con);
+});
+
+function getData(condition){
+	$.ajax({
+		url:'/content/list.action',
+		data:condition,
+		success:function(data){
+			var arr = data.rows;
+			$("#outline").html("");
+			if(arr.length > 0){
+				for(var i=0;i<arr.length;i++){
+					var obj = arr[i];
+					var html = "<li><a href=\"http://www.shuangyu.com.cn:80/news/article.jsp?articleId="+obj.entityId+"\">"+obj.title+"</a></li>";
+					$("#outline").append(html);
+				}
+			}
+		},
+		error:function(){
+//			alert('查询出错!');
+		}
+	});
+}
+</script>
+<style type="text/css" data-creator="amazingslidercreator0">.amazingslider-wrapper-0 {display:block;position:relative;width:100%;height:auto;}.amazingslider-slider-0 {display:block;position:relative;left:0px;top:0px;width:100%;height:auto;}.amazingslider-box-0 {display:block;position:relative;left:0px;top:0px;width:100%;height:auto;}.amazingslider-swipe-box-0 {display:block;position:relative;left:0px;top:0px;width:100%;height:auto;}.amazingslider-space-0 {display:block;position:relative;left:0px;top:0px;width:100%;height:auto;visibility:hidden;line-height:0px;font-size:0px;}.amazingslider-img-box-0 {display:block;position:absolute;left:0px;top:0px;width:100%;height:100%;}.amazingslider-lightbox-play-0 {display:none;position:absolute;left:50%;top:50%;cursor:pointer;width:64px;height:64px;margin-top:-32px;margin-left:-32px; background:url('http://www.shuangyu.com.cn/sliderengine/playvideo-64-64-0.png') no-repeat left top;}.amazingslider-play-0 {display:none;position:absolute;left:50%;top:50%;cursor:pointer;width:64px;height:64px;margin-top:-32px;margin-left:-32px; background:url('http://www.shuangyu.com.cn/sliderengine/playvideo-64-64-0.png') no-repeat left top;}.amazingslider-video-wrapper-0 {display:none;position:absolute;left:0px;top:0px;background-color:#000;text-align:center;}.amazingslider-error-0 {display:block;position:relative;margin:0 auto;width:80%;top:50%;color:#fff;font:16px Arial,Tahoma,Helvetica,sans-serif;}.amazingslider-video-wrapper-0 video {max-width:100%;height:auto;}.amazingslider-video-wrapper-0 iframe, .amazingslider-video-wrapper-0 object, .amazingslider-video-wrapper-0 embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
+<body>
+<script type="text/javascript" src="./snacks_files/login.js"></script>
+<div class="header">
+	<div class="container">
+		<div class="left logo">
+			<a href="#" title="首页">
+			<img  src="./snacks_files/index_logo.png" alt="首页" style="margin-left: 40px;"></a>
+		</div>
+		<div class="right">
+			
+			<ul class="header-nav">
+				<li class="active"><a href="./index.html">首页</a></li>
+				<li class=""><a href="about_miaowei.html">了解妙味</a>
+				
+				</li>
+				<li class=""><a href="news.html">新闻中心</a>
+					
+				</li>
+				<li class=""><a href="products.html">产品展示</a>
+					
+				</li>
+				
+				
+				<li class=""><a href="culture.html">企业文化</a>
+					
+				</li>
+				<li class=""><a href="find_us.html">联系我们</a>
+					
+				</li>
+				
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	
+</div>
+
+<div class="sub-menu-wrap hide" >
+	<div class="container-wrap">
+		<ul class="sub-menu"></ul>
+	</div>
+</div >
+
+
+
+
+<div class="home-pic-scroll" >
+	
+	<div class="container" >
+	
+		<div style="max-width:1100px;">
+    
+		</div>
+		  
+	</div>
+	
+</div>
+	
+<div class="container" id="footer" style="padding-top: 0px;" >
+	<div style="width: 1100px;height: 600px;padding-top: 200px;">
+		<a href="products.html">
+			<img src="snacks_files/index.jpg" alt="products.html" style="margin-top:-200px;;margin-left:-1px;"/>
+		</a>
+	</div>
+	<div>
+		<iframe src="dali.html" style="width: 1100px;height:500px;margin-top:-500px;"frameborder="0"></iframe>
+	</div>
+	<div style="width: 1100px;height: 230px;margin-top: -222px;">
+		<a href="leaderTalk.html"><img src="./snacks_files/leader.jpg" style="margin-left: 13px;"></img></a>
+		<div style="width: 1100px;height: 200px;border-bottom: 1px solid #E5DFD3;margin-top: -0px;">
+			</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			商海茫茫，千舟竞发。自信使我们在这个竞争与发展同在，机遇与挑战并存的环境中信心更足； 努力让我们学会脚踏实地和不懈追求。企业有了这两点，就扎下了发<br></br>
+			&nbsp;&nbsp;&nbsp;&nbsp;展的根。它使企业里的每一个 人在生活和工作中闪耀着人性、智慧的灵光，使我们的合作者和我们一样更加信心百倍地迎接未来。 这是我们的财富，也是我们的价值，更<br><br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;是我们为客户提供每一件优质产品的动力和信念。<br></br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			做事踏实认真、待人宽容诚恳、追求博大精深、发展永无止境。这是妙味人做人和做事的根本准则，也是妙味不断发展的座右铭。精诚所致，金石为开，我们将继续努<br></br>
+			&nbsp;&nbsp;&nbsp;&nbsp;力，不断的追求超一流品质和服务，营造热情开放、真诚协作、开拓进取的共赢氛围。我们真诚的欢迎社会各界宾朋友能够莅临妙味，共谋发展，共创辉煌。
+			<a href="leaderTalk.html" ><img src="./dali_files/more.png"></img></a>
+		</div>
+	</div>
+
+	<div class="footer" style="border: 0px solid red;margin-top: -0px;">
+
+		<div class="footer-wrap">
+			<center>
+			<img src="./snacks_files/item_line.jpg"><br><br>
+			<ul>
+				<li class="f2"><a href="http://weibo.com/u/5406959768" target="_blank"><span></span>妙味食品官方微博</a></li>
+				<li class="f3"><a href="javascript:void(0)"><span></span>客服:400-023-3353</a></li>
+				<li class="f3"><a href="javascript:void(0)"><span></span>热线:023-67086928</a></li>
+				<li class="f4"><a href="javascript:void(0)"><span></span>邮箱：cqymw023@sina.cn</a></li>
+			</ul>
+			</center>
+			<br>
+			<p>公司地址：重庆市垫江县新民镇粮站（渝巫路38号）&nbsp;&nbsp;&nbsp;&nbsp;传真：67086928 &nbsp;&nbsp;&nbsp;&nbsp;邮政编码：400000</p>
+			<p>重庆妙味食品有限公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;渝ICP备14010616号</p>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+
+function positionFooter() {
+    /* var footerHeight = 0;
+    var footerTop = 0;
+    footerHeight = $("#footer").height();
+    footerTop = (document.body.scrollHeight-footerHeight)+"px"; */
+    $("#footer").css({"padding-top":"0px"});
+    //如果页面内容高度小于屏幕高度，div#footer将绝对定位到屏幕底部，否则div#footer保留它的正常静态定位
+    if($(document.body).height() < $(window).height()) {
+        $("#footer").css({"padding-top":$(window).height()-$(document.body).height()+"px"});
+    }
+    else{
+//    	$("#footer").css({"padding-top":"0px"});
+    }
+}
+$(window).bind("load", function() {
+//	positionFooter();
+	var dynamic = "0";
+    if(dynamic == "0"){
+    	positionFooter();
+    }
+    //$(window).scroll(positionFooter).resize(positionFooter);
+    //$("body").resize(positionFooter);
+});
+</script>
+
+<script type="text/javascript">
+	function close_swf(){
+		$(".show_swf").animate({"opacity":"0"},500,function(){
+			$(".show_swf").remove();
+		});
+	};
+	function getCookie(name){ 
+		var strCookie=document.cookie; 
+		var arrCookie=strCookie.split("; "); 
+		for(var i=0;i<arrCookie.length;i++){ 
+		var arr=arrCookie[i].split("="); 
+		if(arr[0]==name)return arr[1]; 
+		} 
+		return ""; 
+	};
+	function addCookie(name,value,expiresHours){ 
+		var cookieString=name+"="+escape(value); 
+		if(expiresHours>0){ 
+			var date=new Date(); 
+			date.setTime(date.getTime+expiresHours*3600*1000); 
+			cookieString=cookieString+"; expires="+date.toGMTString(); 
+		} 
+		document.cookie=cookieString; 
+	};
+	var show_swf=getCookie("should_show_swf");
+	if(show_swf){
+		$(".show_swf").remove();
+	}
+	else{
+		addCookie("should_show_swf","false");
+		setTimeout(function(){
+			$(".show_swf").fadeOut();
+		},13900);
+	}
+</script>
+
+
+</body></html>
